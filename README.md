@@ -138,8 +138,27 @@ credit-risk-prediction/
     └── README.md
 ```
 
-The actual dataset can be kept outside the repository if its redistribution is not permitted.
+## Dataset
 
+The dataset is not included in this repository.
+
+Please download the Credit Risk Dataset from Kaggle:
+
+https://www.kaggle.com/datasets/laotse/credit-risk-dataset
+
+After downloading and extracting the dataset, place:
+
+`credit_risk_dataset.csv`
+
+inside:
+
+`data/`
+
+The notebook loads the dataset using:
+
+```python
+df = pd.read_csv("data/credit_risk_dataset.csv")
+```
 ## Reproducibility
 
 The train-test split and most models use fixed random states where applicable. The experiment uses an 80/20 stratified train-test split.
