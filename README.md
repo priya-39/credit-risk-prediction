@@ -19,7 +19,7 @@ It covers:
 Download `credit_risk_dataset.csv` from Kaggle:
 https://www.kaggle.com/datasets/laotse/credit-risk-dataset
 
-Place it in the `data/` folder. The dataset is not included in this repository (see `data/README.md`). The notebook loads it with:
+A copy of the file is already included in the `data/` folder. The notebook loads it with:
 
 ```python
 df = pd.read_csv("data/credit_risk_dataset.csv")
@@ -85,7 +85,8 @@ credit-risk-prediction/
 ├── README.md
 ├── requirements.txt
 └── data/
-    └── README.md
+    ├── README.md
+    └── credit_risk_dataset.csv
 ```
 
 ## Future Improvements
