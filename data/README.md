@@ -1,21 +1,16 @@
 # Dataset
 
-The dataset used in this project is the **Credit Risk Dataset**.
+Source: [Credit Risk Dataset on Kaggle](https://www.kaggle.com/datasets/laotse/credit-risk-dataset)
 
-## Download
+A copy of `credit_risk_dataset.csv` is included in this folder so the notebook runs directly. The notebook loads it with:
 
-Download the dataset from Kaggle:
+```python
+df = pd.read_csv("data/credit_risk_dataset.csv")
+```
 
-https://www.kaggle.com/datasets/laotse/credit-risk-dataset
+The final project structure looks like this:
 
-After downloading the dataset:
-
-1. Extract the downloaded ZIP file.
-2. Locate `credit_risk_dataset.csv`.
-3. Place the CSV file inside this `data` folder.
-
-The final project structure should look like:
-
+```text
 credit-risk-prediction/
 │
 ├── credit-risk.ipynb
@@ -25,11 +20,8 @@ credit-risk-prediction/
 └── data/
     ├── README.md
     └── credit_risk_dataset.csv
+```
 
 ## Important
 
-The dataset is not included in this repository. Please download it from the original Kaggle source.
-
-The notebook expects the dataset at:
-
-`data/credit_risk_dataset.csv`
+A copy of the dataset is included in this folder for convenience. The original source is the Kaggle link above; please refer to it for the dataset's license and terms.
